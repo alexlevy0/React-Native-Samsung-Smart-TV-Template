@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import React, { useState, useEffect } from "react";
+import { StyleSheet, View, Text } from "react-native";
 
 // Components
-import Button from './components/Button';
+import Button from "./components/Button";
 
 // Modules
-import SpatialNavigation from 'react-js-spatial-navigation';
+import SpatialNavigation from "react-js-spatial-navigation";
 
 function App() {
-  const [keyCode, setKeyCode] = useState('');
+  const [keyCode, setKeyCode] = useState("");
 
   const keyHandler = (key) => {
     console.log(key.keyCode);
@@ -25,10 +25,10 @@ function App() {
   };
 
   useEffect(() => {
-    window.addEventListener('keydown', keyHandler);
+    window.addEventListener("keydown", keyHandler);
 
     return () => {
-      window.removeEventListener('keydown', keyHandler);
+      window.removeEventListener("keydown", keyHandler);
     };
   });
 
@@ -41,8 +41,7 @@ function App() {
         Use the remote buttons to see the keycode: {keyCode}
       </Text>
       <View style={styles.subContainer}>
-        <SpatialNavigation />
-        {renderItems()}
+        <SpatialNavigation>{renderItems()}</SpatialNavigation>
       </View>
     </View>
   );
@@ -51,17 +50,17 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '100vh',
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center",
+    minHeight: "100vh",
   },
   subContainer: {
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    flexWrap: "wrap",
     marginTop: 25,
   },
   text: {
