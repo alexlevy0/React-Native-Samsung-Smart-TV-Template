@@ -1,0 +1,46 @@
+{
+  "name": "samsung-tv-example-app",
+  "version": "0.0.1",
+  "author": "Issam El Nasiri",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "web": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "^16.13.1",
+    "react-js-spatial-navigation": "0.0.5",
+    "react-native": "0.63.2",
+    "react-native-web": "^0.13.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "eslint": "^6.5.1",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1",
+    "react-scripts": "^3.4.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "./"
+}
