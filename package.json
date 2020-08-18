@@ -1,6 +1,6 @@
 {
   "name": "samsung-tv-example-app",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Issam El Nasiri",
   "scripts": {
     "android": "react-native run-android",
