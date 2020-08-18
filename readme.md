@@ -1,3 +1,5 @@
+![](./logo.png)
+
 # React Native Samsung Smart Tv Template
 
 This is a template made with react native for samsung smart tv's (Tizen).
